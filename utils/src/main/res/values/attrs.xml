@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="min" format="float" />
+    <attr name="max" format="float" />
+
+    <declare-styleable name="AmountFormatEditText">
+        <attr name="min" />
+        <attr name="max" />
+    </declare-styleable>
+
+    <declare-styleable name="RegexEditText">
+        <attr name="regex" format="string"/>
+        <attr name="min" />
+        <attr name="max" />
+    </declare-styleable>
+</resources>

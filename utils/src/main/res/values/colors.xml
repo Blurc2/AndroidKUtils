@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy_blue">#00234d</color>
+    <color name="orange">#ef6b10</color>
+    <color name="yellowish_orange">#f8a313</color>
+    <color name="marine_blue">#002d63</color>
+    <color name="very_light_pink">#dddddd</color>
+    <color name="darkish_blue">#003a80</color>
+    <color name="orangey_red">#ff3b30</color>
+    <color name="bluey_grey">#99a7b8</color>
+    <color name="sun_yellow">#fed230</color>
+    <color name="green_apple">#44cf27</color>
+    <color name="navy">#001b3b</color>
+    <color name="soft_blue">#68bbe3</color>
+</resources>

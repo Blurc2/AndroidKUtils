@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Utils</string>
+    <string name="finger_auth_error">Huella no reconocida, intente de nuevo</string>
+    <string name="finger_auth_error5">Huella no reconocida</string>
+    <string name="finger_auth_error5_msg">Utilice su Contraseña</string>
+    <string name="finger_auth_header">Inicio de sesión</string>
+    <string name="finger_auth_msg">Coloque su dedo para autenticar</string>
+    <string name="finger_unlock_msg">Coloque su dedo para desbloquear</string>
+    <string name="finger_auth_success">Huella reconocida</string>
+    <string name="finger_prompt_msg">Toque el sensor de huella</string>
+    <string name="no_finger_hardware_header">Dispositivo no compatible</string>
+    <string name="no_finger_hardware_msg">Lo sentimos, su dispositivo no cuenta con sensor de huella dactilar.</string>
+    <string name="no_api23_header">Dispositivo no compatible</string>
+    <string name="no_api23_msg">Lo sentimos, la versión del Sistema Operativo de su dispositivo no es compatible con el uso de huella dactilar.</string>
+    <string name="config_finger_header">Configure huella dactilar</string>
+    <string name="config_finger_msg">En su dispositivo, vaya a los Ajustes de huella dactilar, generalmente ubicado dentro de la opción “Seguridad”.</string>
+
+    <string name="permission_need_msg">Para hacer uso de todas las funciones de la aplicación es necesario que aceptes los permisos solicitados.</string>
+    <string name="permission_need_title">"Permisos rechazados"</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_config">CONFIGURAR</string>
+    <string name="btn_cancel">CANCELAR</string>
+    <string name="btn_accept">ACEPTAR</string>
+
+    <string name="amount_limit">El precio debe estar en el rango de $%s - $%s</string>
+    <string name="amount_limit_no_icon">El valor debe estar en el rango de %s - %s</string>
+    <string name="amount_format">$%s</string>
+    <string name="string">%s</string>
+    <string name="regex_error">El texto no cumple con el formato requerido.</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac mi mollis, sodales metus non, ultricies metus. Pellentesque tincidunt est eget urna sagittis sollicitudin ornare vitae lectus. In dignissim id quam eget lacinia. Vivamus congue neque neque, ac vehicula nunc malesuada ut. Vivamus tempor lacus quis malesuada commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus eleifend, nisl ac auctor malesuada, nisl diam facilisis quam, ornare ultricies lectus mauris at magna. Nullam et leo neque. Nulla convallis quam sem. Nullam pulvinar lacus eu quam dictum commodo. Maecenas ante ipsum, ullamcorper eget viverra vitae, vestibulum quis quam. Curabitur sed tellus nec diam tincidunt dictum vel sed massa. Proin porta dui vitae nisl faucibus, sed venenatis velit mollis. Morbi rhoncus mauris nec leo commodo pretium. Sed porttitor lorem at felis venenatis sagittis.</string>
+</resources>

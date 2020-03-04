@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View"/>
+        <import type="com.raer.utils.enums.DialogType"/>
+        <variable
+            name="data"
+            type="com.raer.utils.dtos.DialogDto" />
+    </data>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:elevation="6dp"
+            android:layout_marginTop="30dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="22dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="ENCABEZADO"
+                    app:setTextOrGone="@{data.title}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    tools:text="Un mensaje"
+                    app:setTextOrGone="@{data.msg}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_header" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_finger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:drawableStart="@drawable/ic_finger"
+                    android:drawablePadding="11dp"
+                    android:gravity="center_vertical"
+                    tools:text="@string/finger_prompt_msg"
+                    app:setTextOrGone="@{data.auth_msg}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_msg" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_action_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="24dp"
+                    android:padding="6dp"
+                    tools:text="CANCELAR"
+                    app:setTextOrGone="@{data.btnCancelText}"
+                    android:onClick="@{() -> data.btnCancelAction.invoke()}"
+                    app:layout_constraintEnd_toStartOf="@id/tv_action_accept"
+                    app:layout_constraintTop_toBottomOf="@id/tv_finger" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_action_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:padding="6dp"
+                    tools:text="ACEPTAR"
+                    app:setTextOrGone="@{data.btnAcceptText}"
+                    android:onClick="@{() -> data.btnAcceptAction.invoke()}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_finger" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_type"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:elevation="8dp"
+            android:visibility="@{(data.type != null &amp;&amp; data.type != DialogType.BIOMETRIC) ? View.VISIBLE : View.GONE}"
+            app:setDialogType="@{data.type}"
+            tools:src="@drawable/ic_success_black_24_px"
+            />
+    </FrameLayout>
+</layout>
